@@ -1,5 +1,8 @@
-#!/bin/bash
-username=$(whoami)
-home_directory="/home/$username"
-cd "$home_directory"
 
+#!/bin/bash
+
+# Get the user's home directory
+home_dir=$(readlink -f ~)
+
+# Change the working directory to the user's home directory
+cd "$home_dir
