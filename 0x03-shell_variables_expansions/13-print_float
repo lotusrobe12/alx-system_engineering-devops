@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%.2f \n" $MYNUM
+echo $(printf "%.2f" $(env | grep NUM | cut -d= -f2))
