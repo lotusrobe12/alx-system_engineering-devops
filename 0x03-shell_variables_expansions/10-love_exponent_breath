@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(env | grep BREATH | cut -d= -f2) ** $(env | grep LOVE | cut -d= -f2) 
+echo $(($BREATH ** $LOVE))
